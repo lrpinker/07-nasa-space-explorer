@@ -19,12 +19,26 @@
       <button>Get Space Images</button>
     </div>
 
+    <section class="space-fact" aria-labelledby="spaceFactTitle">
+      <h2 id="spaceFactTitle">Did You Know?</h2>
+      <p id="spaceFact"></p>
+    </section>
+
     <div id="gallery" class="gallery">
       <div class="placeholder">
         <div class="placeholder-icon">🔭</div>
-        <p>Select a date range and click "Get Space Images" to explore the cosmos!</p>
+        <p>Your space gallery is ready. Choose dates, then click "Get Space Images" to begin.</p>
       </div>
     </div>
+
+    <dialog id="imageModal" class="image-modal" aria-labelledby="modalTitle">
+      <button type="button" id="closeModal" class="modal-close">Close</button>
+      <img id="modalImage" class="modal-image" alt="" />
+      <h2 id="modalTitle"></h2>
+      <p id="modalDate"></p>
+      <p id="modalExplanation"></p>
+      <a id="modalVideoLink" target="_blank" rel="noopener noreferrer" hidden>Watch this APOD video</a>
+    </dialog>
   </div>
 
   <script src="js/dateRange.js"></script>
